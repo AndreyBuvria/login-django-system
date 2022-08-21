@@ -1,0 +1,63 @@
+:root {
+    --input-color: #575b64;
+    --input-border: #CDD9ED;
+    --input-background: #fff;
+    --input-placeholder: #CBD1DC;
+    --input-border-focus: #275EFE;
+
+    --btn-border: #3a3a3a62;
+    --btn-background: #FAFBFC;
+}
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-label {
+    font-size: 16px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    color: var(--input-color);
+    border: 1px solid var(--input-border);
+    background: var(--input-background);
+    transition: border .3s ease;
+}
+.form-control:focus {
+    outline: none;
+    border-color: var(--input-border-focus);
+}
+.form-control::placeholder {
+    color: var(--input-placeholder);
+}
+
+.form-link {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.form-btn {
+    padding: 8px 18px;
+    background: var(--btn-background);
+    border: 1px solid var(--btn-border);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+}
+.form-btn:hover {
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
