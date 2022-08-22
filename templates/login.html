@@ -4,7 +4,7 @@
 
 <div class="login">
     <h1 class="title">Login</h1>
-    <form action="">
+    <form method="post"> {% csrf_token %}
         <div class="form">
             <div class="form-group">
                 <span class="form-label">Username</span>
@@ -17,6 +17,9 @@
             </div>
             <a href="/signup" class="form-link">Don't you have account yet?</a>
             <button type="submit" class="form-btn">Login</button>
+            {% if auth == False %}
+            <p class="alert-text">Username or password is wrong</p>
+            {% endif %}
         </div>
     </form>
 </div>

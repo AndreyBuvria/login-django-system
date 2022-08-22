@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<div class="login">
+<div class="signup">
     <h1 class="title">Sign up</h1>
-    <form action="">
+    <form method="post"> {% csrf_token %}
         <div class="form">
             <div class="form-group">
                 <span class="form-label">Username</span>
